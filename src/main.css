@@ -1,4 +1,21 @@
 body {
-  background-color: #ffa3a3;
   font-family: sans-serif;
+  background-color: #ffe1e1;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  padding: 1rem;
+  background-color: #4d79ff;
+  margin: 1rem;
+  border-radius: 5px;
 }
