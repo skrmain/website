@@ -17,19 +17,23 @@ const removeButtons = document.querySelectorAll('.removeButton');
 function addValue() {
   // console.log(valueElement.value);
   //   4- Element Create
-  const liElement = document.createElement('li');
-  const removeButton = document.createElement('button');
+  if (valueElement.value) {
+    const liElement = document.createElement('li');
+    const removeButton = document.createElement('button');
 
-  removeButton.innerHTML = 'Remove';
-  removeButton.addEventListener('click', removeValue);
+    removeButton.innerHTML = 'Remove';
+    removeButton.addEventListener('click', removeValue);
 
-  // console.log(removeButton);
+    // console.log(removeButton);
 
-  liElement.innerHTML = valueElement.value;
-  liElement.append(removeButton);
-  valueElement.value = '';
+    liElement.innerHTML = valueElement.value;
+    liElement.append(removeButton);
+    valueElement.value = '';
 
-  unOrderListElement.append(liElement);
+    unOrderListElement.append(liElement);
+  } else {
+    alert('No Value to Add.');
+  }
 }
 
 function removeValue(e) {
