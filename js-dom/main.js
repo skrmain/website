@@ -17,6 +17,7 @@ const removeButtons = document.querySelectorAll('.removeButton');
 function addValue() {
   // console.log(valueElement.value);
   //   4- Element Create
+  // TODO: Handle Empty Space in value
   if (valueElement.value) {
     const liElement = document.createElement('li');
     const removeButton = document.createElement('button');
