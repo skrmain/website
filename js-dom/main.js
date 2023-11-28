@@ -1,14 +1,4 @@
-console.log('JS-DOM');
-const student = { name: 'Ram', course: 'Web' };
-
-// const h1 = document.all[6];
-// 1- Element Select
-const headingElement = document.querySelector('h1');
-
-// 2- Element Change
-headingElement.innerHTML = 'Web Development';
-headingElement.style.color = 'red';
-
+// 1. Element Select
 const valueElement = document.querySelector('input');
 const addButtonElement = document.querySelector('.addButton');
 const unOrderListElement = document.querySelector('ul');
