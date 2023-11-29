@@ -3,12 +3,13 @@ const valueElement = document.querySelector('input');
 const addButtonElement = document.querySelector('.addButton');
 const unOrderListElement = document.querySelector('ul');
 const removeButtons = document.querySelectorAll('.removeButton');
+const clearAllButton = document.querySelector('.clearAll');
 
 function addValue() {
   // console.log(valueElement.value);
   //   4- Element Create
   // TODO: Handle Empty Space in value
-  if (valueElement.value) {
+  if (valueElement.value.trim()) {
     const liElement = document.createElement('li');
     const removeButton = document.createElement('button');
 
@@ -35,8 +36,13 @@ function removeValue(e) {
   e.srcElement.parentElement.remove();
 }
 
+function clearAll() {
+  console.log('Clear All Button Clicked');
+  unOrderListElement.innerHTML = '';
+}
 // 3- Action
 addButtonElement.addEventListener('click', addValue);
+clearAllButton.addEventListener('click', clearAll);
 
 removeButtons.forEach(function (removeButton) {
   removeButton.addEventListener('click', removeValue);
