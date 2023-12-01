@@ -65,7 +65,25 @@ Sample Website
 
 ### JS
 
+- Comments
+- variables
+- var, let, const
+- functions, arrow function
+- objects, classes, getters, setters
+- event
+- fetch,json, Fetch API
+- errors - try, catch, finally
+- maps
+- DOM, BOM
+
 ### Git and GitHub
+
+- git init -- One Time
+- git add . -- Every Time
+- git commit -m "MESSAGE" -- Every Time
+- git push -- Every Time
+- github -- create repository
+- delete repository
 
 ---
 
@@ -75,7 +93,7 @@ Sample Website
 
 ### MongoDB, Mongoose
 
-### API
+### REST API
 
 ---
 
