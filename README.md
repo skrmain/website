@@ -4,6 +4,25 @@ Sample Website
 
 ## Notes
 
+### HTML
+
+- Elements
+- Attributes
+
+### CSS
+
+- Selector
+- Property
+- Value
+
+### JS
+
+- Selector(Value, methods)
+- Action
+- Handler(Function)
+
+### Git
+
 1. `git init` -- One Time
 
 ---
@@ -65,16 +84,31 @@ Sample Website
 
 ### JS
 
-- Comments
-- variables
-- var, let, const
-- functions, arrow function
-- objects, classes, getters, setters
-- event
-- fetch,json, Fetch API
-- errors - try, catch, finally
-- maps
-- DOM, BOM
+1. Common JavaScript
+   - Scripting
+     - Comments, variables, var, let, const
+     - Data Types - String, Array, Boolean, `typeof`, Number, Date, Math, Object
+     - Type Conversion
+     - Operators - Arithmetic, Comparison, Logical
+     - Control Statements
+       - Conditional - if, else, switch
+       - Lopping - for, while, do-while, break, continue
+     - Errors Handling - try, catch, finally
+   - Functional
+     - hoisting, scope
+     - functions, arrow function
+   - OOP
+     - objects, classes, getters, setters
+     - Method Overriding
+   - Modules
+2. Browser JavaScript
+   - DOM, BOM
+   - Event, Element
+   - JSON, Fetch API
+3. Node JavaScript
+   - npm, node, npx
+   - NodeJS Build-in Modules
+   - Third Party
 
 ### Git and GitHub
 
@@ -98,3 +132,14 @@ Sample Website
 ---
 
 ### Angular/ReactJS
+
+## Todo
+
+1. Web - Even Odd
+   - event - input, change, click
+2. NodeJS - Install
+3. NodeJS - Hello World
+
+---
+
+1. title case function

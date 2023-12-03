@@ -7,7 +7,7 @@ function addUserDetail(e) {
 
   const name = userDetailFormElement.name.value;
   const email = userDetailFormElement.email.value;
-  const gender = userDetailFormElement.gender.value;
+  const gender = userDetailFormElement.gender.value.toUpperCase();
   const canVote = userDetailFormElement.canVote.checked;
   //   console.log({ name, email, gender, canVote });
   const dataHtml = `
