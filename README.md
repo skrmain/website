@@ -139,13 +139,14 @@ Sample Website
   - event - input, change, click
 - [x] NodeJS - Install
 - [x] NodeJS - Hello World
-- [ ] title case function
+- [ ] Title case function
 - [ ] Web - Fibonacci Series
-  - [ ] N Numbers
+  - [x] N Numbers
   - [ ] Start to End
 - [ ] Web - Tables in Table
-  - [ ] N Numbers
+  - [x] N Numbers
   - [ ] Start to End
+- [ ] Student Result
 
 ---
 
