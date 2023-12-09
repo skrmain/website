@@ -105,6 +105,7 @@ Sample Website
    - DOM, BOM
    - Event, Element
    - JSON, Fetch API
+   - Form Validations
 3. Node JavaScript
    - npm, node, npx
    - NodeJS Build-in Modules
@@ -122,6 +123,8 @@ Sample Website
 ---
 
 ### NodeJS, npm
+
+- [ ] Simple Rest Server with SQL
 
 ### ExpressJS
 
