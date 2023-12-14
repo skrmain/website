@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key-Press</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #key {
+        font-size: 5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Key Press</h1> -->
+    <div class="container">
+      <div id="key"></div>
+    </div>
+
+    <!-- TODO: 1. Show multiple keys with Ctrl,Shift,Alt  -->
+    <!-- Example: Ctrl+e -->
+    <!-- Example: Ctrl+Shift+e -->
+
+    <!-- TODO: 2. Center align the Key -->
+
+    <!-- TODO: 3. To show the Key for sometime only -->
+
+    <script>
+      // const h1Element = document.querySelector('h1');
+      const keyElement = document.querySelector('#key');
+      let timeout;
+
+      const keyPressed = (e) => {
+        console.log('Event', e);
+        console.log('Key Pressed');
+
+        if (e.altKey && e.key === 'a') {
+          keyElement.style.color = 'red';
+        } else {
+          keyElement.style.color = 'black';
+        }
+
+        if (e.altKey && e.key !== 'Alt') {
+          keyElement.innerHTML = `Alt + ${e.key}`;
+        } else {
+          keyElement.innerHTML = e.key;
+        }
+
+        // TODO: Control, Shift
+        const pressedKey = keyElement.innerHTML;
+        if (timeout) {
+          clearTimeout(timeout);
+        }
+
+        timeout = setTimeout(() => {
+          console.log('Cleared ', pressedKey);
+          keyElement.innerHTML = '';
+        }, 5 * 1000);
+      };
+
+      window.addEventListener('keydown', keyPressed);
+
+      // setTimeout(() => {
+      //   console.log('[Timeout] After 3 Seconds');
+      // }, 3 * 1000);
+
+      // setInterval(() => {
+      //   console.log('[Interval] After 3 Seconds');
+      // }, 3 * 1000);
+    </script>
+  </body>
+</html>
