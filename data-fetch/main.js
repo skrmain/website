@@ -4,6 +4,7 @@ const dataElement = document.querySelector('.data');
 const getDataElement = document.querySelector('.getData');
 
 function getData() {
+  // AJAX - Asynchronous JavaScript and XML
   fetch('./data.json')
     .then((res) => res.json())
     .then((result) => {
