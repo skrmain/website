@@ -21,7 +21,10 @@ Sample Website
 - Action
 - Handler(Function)
 
-### Git
+### Git and GitHub
+
+- Git - System that tracks changes in files(Version Control System)
+- GitHub - Distributed version control system
 
 1. `git init` -- One Time
 
@@ -29,10 +32,20 @@ Sample Website
 
 2. `git add .` -- Every Time
 3. `git commit -m "MESSAGE"` -- Every Time
+4. `git log`
+   - `q` - exit
+   - `space` - next commit messages
 
 ---
 
-4. `git push` -- Every Time
+5. `git push` -- Every Time
+6. `git pull`
+
+---
+
+6. Branch
+   - `git branch` -- create, delete, merge, switch
+7. Pull Request
 
 ## Topics
 
